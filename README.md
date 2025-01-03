@@ -1,50 +1,63 @@
-# Welcome to your Expo app 👋
+# Flashcards Learning App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A **basic Flashcards Learning App** built using **React Native** and **Expo**. This project helped me explore routing and state management in React Native, along with other key features of the framework. The app allows users to navigate through flashcards, view questions, reveal answers, and use navigation buttons for sequential card traversal.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- **Welcome Screen**: A simple introduction screen with a button to navigate to the main app.
+- **Routing**: Implemented using `expo-router` for seamless screen transitions.
+- **Flashcards Viewer**: Displays one flashcard at a time with the ability to:
+  - Toggle between **question** and **answer**.
+  - Navigate to the **next** and **previous** cards using dedicated buttons.
+- **Responsive UI**: Designed with a clean and user-friendly interface.
+- **State Management**: Managed state locally using React hooks like `useState` and `useEffect`.
 
+## 🛠️ Technologies Used
+
+- **React Native**
+- **Expo**
+- **expo-router** for navigation
+- **JavaScript** for logic implementation
+- **CSS-in-JS** for styling
+
+## 📂 Project Structure
+
+/app |_ layout.jsx // Navigation layout | Welcome.jsx // Welcome screen |_ Home.jsx // Main flashcards screen /components |_ Flashcard.jsx // Flashcard component /data |_ flashcards.js // Flashcard data source
+
+markdown
+Copy code
+
+## 💡 Learning Outcomes
+
+This project was an excellent opportunity to:
+- Get hands-on experience with **React Native** and **Expo**.
+- Understand and implement **navigation** using `expo-router`.
+- Manage component state effectively using React hooks.
+- Design and style React Native components for a seamless user experience.
+
+## 🎯 Future Improvements
+
+- Add a feature to shuffle flashcards.
+- Implement categories or tags for better organization.
+- Enhance UI/UX with animations and transitions.
+- Persist user progress with local storage or a backend.
+
+## 🔧 How to Run
+
+1. Clone the repository:
    ```bash
-   npm install
-   ```
+   git clone https://github.com/your-username/flashcards-learning-app.git
+   cd flashcards-learning-app
+Install dependencies:
 
-2. Start the app
+bash
+Copy code
+npm install
+Start the app:
 
-   ```bash
-    npx expo start
-   ```
+bash
+Copy code
+npm start
+Scan the QR code in the Expo Go app on your phone to view the app.
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Feel free to fork, contribute, or share feedback! 😊
